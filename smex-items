@@ -1,0 +1,25 @@
+
+;; ----- smex-history -----
+(
+ package-list-packages
+ package-refresh-contents
+ eval-buffer
+ byte-compile-file
+ byte-recompile-directory
+ load-theme
+ info
+)
+
+;; ----- smex-data -----
+(
+ (eval-buffer . 15)
+ (info . 2)
+ (customize . 1)
+ (customize-group . 1)
+ (TeX-mode . 1)
+ (package-list-packages . 3)
+ (load-theme . 3)
+ (package-refresh-contents . 2)
+ (byte-compile-file . 2)
+ (byte-recompile-directory . 1)
+)
