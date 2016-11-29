@@ -1,24 +1,25 @@
 (require 'cl) 
 
 (when (>= emacs-major-version 24)
-  (require 'package)
-  (package-initialize)
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-;;  (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+;;  (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
   )
 
 (defvar dobbin/packages '(
 			  company
-			  solarized-theme
+			  ;;solarized-theme
 			  monokai-theme
-			  ;;hungry-delete
+			  hungry-delete
 			  smex
 			  ivy
 			  counsel
 			  swiper
-			  find-file-in-project
+			  ;;find-file-in-project
 			  ;;exec-path-from-shell
 			  smartparens
+			  ;;reveal-in-osx-finder
+			  protobuf-mode
+			  window-numbering
 			  popwin
 			 ) "Default packages"
   )
@@ -39,9 +40,10 @@
     )
   )
 
+(setq package-selected-packages dobbin/packages)
 
-;;(require 'hungry-delete)
-;;(global-hungry-delete-mode)
+(require 'hungry-delete)
+(global-hungry-delete-mode)
 
 (require 'smartparens-config)
 (smartparens-global-mode t)
@@ -50,16 +52,10 @@
 (setq org-src-fnotify-natively t)
 (setq org-agenda-files '("~/org"))
 
-
 (require 'recentf)
 (recentf-mode t)
 (setq recentf-max-menu-items 25)
 (setq recentf-max-saved-items 25)
-
-(global-hl-line-mode t)
-
-(load-theme 'monokai t)
-(add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 
 (require 'smex)
 (smex-initialize)
@@ -67,10 +63,23 @@
 (require 'popwin)
 (popwin-mode t)
 
-(ivy-mode 1)
+(require 'ivy)
+(ivy-mode t)
 (setq ivy-use-virtual-buffers t)
 
+(require 'company)
 (global-company-mode t)
+(setq company-backends (delete 'company-semantic company-backends))
+
+(require 'protobuf-mode)
+(setq auto-mode-alist (cons '(".proto$" . protobuf-mode) auto-mode-alist))
+
+;;(require 'window-numbering)
+(window-numbering-mode t)
+(setq window-numbering-assign-func
+      (lambda () (when (equal (buffer-name) "*Calculator*") 9)))
+
+;;(require 'reveal-in-osx-finder)
 
 (provide 'init-packages)
 

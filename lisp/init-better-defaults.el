@@ -5,6 +5,12 @@
 
 (setq visible-bell nil)
 
+(setq default-tab-width 4)
+(setq c-basic-offset 4)
+
+(add-to-list 'auto-mode-alist '("\\.cc\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+
 (global-auto-revert-mode t)
 
 (setq-default require-final-newline t)
