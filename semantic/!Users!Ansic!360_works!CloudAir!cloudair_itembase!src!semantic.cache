@@ -1,0 +1,817 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TIMER_H_" variable (:constant-flag t) nil [26 34])
+            ("core.h" include nil nil [36 53])
+            ("TimerHandle" variable (:type "int") nil [94 106])
+            ("Timer" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [122 129])
+                    ("Timer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Timer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [134 142])
+                    ("Timer" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [147 164])
+                    ("Set" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("base" variable
+                               (:pointer 1
+                                :type ("event_base" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [178 195])
+                            ("ms" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [196 208])
+                            ("cb" variable (:type ("TimerHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [209 224])
+                            ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [225 235]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [169 236])
+                    ("SchedOneshot" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("t" variable
+                               (:pointer 1
+                                :type ("Timer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [267 276]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [242 277])
+                    ("SchedLoop" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("t" variable
+                               (:pointer 1
+                                :type ("Timer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [304 313]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [282 314])
+                    ("SchedCancel" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("t" variable
+                               (:pointer 1
+                                :type ("Timer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [343 352]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [319 353])
+                    ("private" label nil (reparse-symbol classsubparts) [355 363])
+                    ("DefaultCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [396 403])
+                            ("events" variable (:type "short") (reparse-symbol arg-sub-list) [404 417])
+                            ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [418 428]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [368 429])
+                    ("OneshotCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [462 469])
+                            ("events" variable (:type "short") (reparse-symbol arg-sub-list) [470 483])
+                            ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [484 494]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [434 495])
+                    ("LoopCallback" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [525 532])
+                            ("events" variable (:type "short") (reparse-symbol arg-sub-list) [533 546])
+                            ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [547 557]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [500 558])
+                    ("private" label nil (reparse-symbol classsubparts) [560 568])
+                    ("tv_" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [573 593])
+                    ("base_" variable
+                       (:pointer 1
+                        :type ("event_base" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [598 620])
+                    ("ev_" variable (:type ("event" type (:type "class") nil nil)) (reparse-symbol classsubparts) [625 645])
+                    ("cb_" variable (:type ("TimerHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [650 670])
+                    ("arg_" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [675 696]))                  
+                :type "class")
+                nil [108 699]))          
+      :file "timer.h"
+      :pointmax 709
+      :fsize 708
+      :lastmodtime '(22589 20453 0 0)
+      :unmatched-syntax '((punctuation 92 . 93) (semantic-list 81 . 92) (VOID 77 . 81) (punctuation 76 . 77) (symbol 68 . 76) (punctuation 67 . 68) (punctuation 66 . 67) (symbol 63 . 66) (TYPEDEF 55 . 62) (punctuation 92 . 93) (semantic-list 81 . 92) (VOID 77 . 81) (punctuation 76 . 77) (symbol 68 . 76) (punctuation 67 . 68) (punctuation 66 . 67) (symbol 63 . 66) (TYPEDEF 55 . 62))
+      :lexical-table 
+        '(("TIMER_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags nil
+      :file "time.cc"
+      :pointmax 1
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CORE_H_" variable (:constant-flag t) nil [25 32])
+            ("stdlib.h" include (:system-flag t) nil [34 53])
+            ("stdio.h" include (:system-flag t) nil [54 72])
+            ("pthread.h" include (:system-flag t) nil [73 93])
+            ("unistd.h" include (:system-flag t) nil [94 113])
+            ("fcntl.h" include (:system-flag t) nil [114 132])
+            ("limits.h" include (:system-flag t) nil [133 152])
+            ("sys/stat.h" include (:system-flag t) nil [153 174])
+            ("sys/eventfd.h" include (:system-flag t) nil [175 199])
+            ("google/protobuf/text_format.h" include (:system-flag t) nil [200 240])
+            ("iostream" include (:system-flag t) nil [241 260])
+            ("string" include (:system-flag t) nil [261 278])
+            ("list" include (:system-flag t) nil [279 294])
+            ("queue" include (:system-flag t) nil [295 311])
+            ("map" include (:system-flag t) nil [312 326])
+            ("fstream" include (:system-flag t) nil [327 345])
+            ("limits" include (:system-flag t) nil [346 363])
+            ("math.h" include (:system-flag t) nil [365 382])
+            ("algorithm" include (:system-flag t) nil [383 403])
+            ("tr1/functional" include (:system-flag t) nil [404 429])
+            ("boost/format.hpp" include (:system-flag t) nil [430 457])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [460 493])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [494 525])
+            ("boost/algorithm/string/replace.hpp" include (:system-flag t) nil [526 571])
+            ("boost/algorithm/string/trim.hpp" include (:system-flag t) nil [572 614])
+            ("boost/algorithm/string/split.hpp" include (:system-flag t) nil [615 658])
+            ("boost/algorithm/string/case_conv.hpp" include (:system-flag t) nil [659 706])
+            ("boost/algorithm/string/join.hpp" include (:system-flag t) nil [707 749])
+            ("boost/locale.hpp" include (:system-flag t) nil [750 777])
+            ("boost/thread.hpp" include (:system-flag t) nil [778 805])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [806 839])
+            ("ucs/output.h" include (:system-flag t) nil [841 864])
+            ("ucs/module.h" include (:system-flag t) nil [865 888])
+            ("ucs/http_invoke_params.h" include (:system-flag t) nil [889 924])
+            ("ucs/downstream/http/response.h" include (:system-flag t) nil [925 966])
+            ("ucs/downstream/http/request.h" include (:system-flag t) nil [967 1007])
+            ("ucs/downstream/err_code.h" include (:system-flag t) nil [1008 1044])
+            ("ucs/downstream/http/server.h" include (:system-flag t) nil [1045 1084])
+            ("event.h" include (:system-flag t) nil [1085 1103])
+            ("qss_common/logging.h" include (:system-flag t) nil [1104 1135])
+            ("qss_common/thread_key.h" include (:system-flag t) nil [1136 1170])
+            ("qss_common/config.h" include (:system-flag t) nil [1171 1201])
+            ("qss_common/config_engine.h" include (:system-flag t) nil [1202 1239])
+            ("qss_common/digest.h" include (:system-flag t) nil [1240 1270])
+            ("qss_common/timer.h" include (:system-flag t) nil [1271 1300])
+            ("serializer/serialize.h" include (:system-flag t) nil [1302 1335])
+            ("serializer/object.h" include (:system-flag t) nil [1336 1366])
+            ("itembase_request.pb.h" include nil nil [1368 1400])
+            ("itembase_response.pb.h" include nil nil [1401 1434])
+            ("hash/murmur.h" include nil nil [1436 1460])
+            ("cloudair" using (:type ("cloudair" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1462 1487])
+            ("cloudair::messages" using (:type ("cloudair::messages" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1488 1523])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1525 1545])
+            ("boost" using (:type ("boost" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1546 1568])
+            ("tr1::placeholders" using (:type ("tr1::placeholders" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1569 1603])
+            ("cloud_search" using (:type ("cloud_search" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1604 1633])
+            ("cloud_ucs" using (:type ("cloud_ucs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1634 1660])
+            ("serializer" using (:type ("serializer" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1661 1688])
+            ("ModItembase" type
+               (:prototype t
+                :type "class")
+                nil [1690 1708])
+            ("ItemHandle" type
+               (:prototype t
+                :type "class")
+                nil [1709 1726])
+            ("global.h" include nil nil [1728 1747])
+            ("util.h" include nil nil [1748 1765])
+            ("context.h" include nil nil [1766 1786])
+            ("timer.h" include nil nil [1787 1805])
+            ("mod_itembase.h" include nil nil [1806 1831]))          
+      :file "core.h"
+      :pointmax 1842
+      :fsize 1841
+      :lastmodtime '(22589 20451 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CORE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("core.h" include nil nil [1 18])
+            ("Timer" function
+               (:constructor-flag t
+                :parent "Timer"
+                :type ("Timer" type (:type "class") nil nil))
+                nil [20 38])
+            ("Timer" function
+               (:destructor-flag t
+                :parent "Timer"
+                :type "void")
+                nil [40 59])
+            ("Set" function
+               (:parent "Timer"
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type ("event_base" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77 94])
+                    ("ms" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95 107])
+                    ("cb" variable (:type ("TimerHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [108 123])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [124 134]))                  
+                :type "void")
+                nil [61 298])
+            ("SchedOneshot" function
+               (:parent "Timer"
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("Timer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [324 333]))                  
+                :type "int")
+                nil [300 564])
+            ("SchedLoop" function
+               (:parent "Timer"
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("Timer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [589 598]))                  
+                :type "int")
+                nil [566 825])
+            ("SchedCancel" function
+               (:parent "Timer"
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("Timer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [852 861]))                  
+                :type "void")
+                nil [827 940])
+            ("DefaultCallback" function
+               (:parent "Timer"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [972 979])
+                    ("events" variable (:type "short") (reparse-symbol arg-sub-list) [980 993])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [994 1004]))                  
+                :type "void")
+                nil [943 1026])
+            ("OneshotCallback" function
+               (:parent "Timer"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1057 1064])
+                    ("events" variable (:type "short") (reparse-symbol arg-sub-list) [1065 1078])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1079 1089]))                  
+                :type "void")
+                nil [1028 1142])
+            ("LoopCallback" function
+               (:parent "Timer"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1170 1177])
+                    ("events" variable (:type "short") (reparse-symbol arg-sub-list) [1178 1191])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1192 1202]))                  
+                :type "void")
+                nil [1144 1280]))          
+      :file "timer.cc"
+      :pointmax 1282
+      :fsize 1281
+      :lastmodtime '(22590 26987 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("GLOBAL_H_" variable (:constant-flag t) nil [381 390])
+            ("Errno" type
+               (:members 
+                  ( ("eOk" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [409 413])
+                    ("eParam" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [418 425])
+                    ("eParseRequst" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [430 443])
+                    ("eSerialize" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [448 459])
+                    ("eInternal" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [464 474])
+                    ("eConnKuwo" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [479 489])
+                    ("eConnMeddle" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [494 506])
+                    ("eConnOnebox" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [511 523])
+                    ("eConnSeComp" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [528 540])
+                    ("eParseKuwo" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [545 556])
+                    ("eParseMeddle" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [561 574])
+                    ("eParseOnebox" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [579 592])
+                    ("eParseSeComp" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [597 610])
+                    ("eResultKuwo" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [615 627])
+                    ("eResultMeddle" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [632 646])
+                    ("eResultOnebox" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [651 665])
+                    ("eResultSeComp" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [670 684])
+                    ("eResult" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [689 697])
+                    ("eRequest" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [702 711])
+                    ("eForbid" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [716 725]))                  
+                :type "enum")
+                nil [392 726]))          
+      :file "global.h"
+      :pointmax 736
+      :fsize 735
+      :lastmodtime '(22589 20452 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GLOBAL_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("UTIL_H_" variable (:constant-flag t) nil [377 384])
+            ("core.h" include nil nil [386 403])
+            ("parse_hosts" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("host_port" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [422 446])
+                    ("host" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [447 460])
+                    ("port" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [461 471]))                  
+                :type "bool")
+                nil [405 472])
+            ("get_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("params" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [491 525])
+                    ("key" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [530 548])
+                    ("defalut_value" variable
+                       (:default-value "\"\""
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [549 574]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [474 576])
+            ("json_dumps" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [596 609])
+                    ("obj" variable
+                       (:reference 1
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [610 622]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [578 623])
+            ("json_loads" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [641 660])
+                    ("obj" variable
+                       (:reference 1
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [661 673]))                  
+                :type "bool")
+                nil [625 674])
+            ("random_range" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("max" variable (:type "int") (reparse-symbol arg-sub-list) [693 701]))                  
+                :type "int")
+                nil [676 702])
+            ("double_format" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dd" variable (:type "double") (reparse-symbol arg-sub-list) [725 735]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [704 736])
+            ("object_to_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [762 780]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [738 781])
+            ("object_to_double" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [807 825]))                  
+                :type "double")
+                nil [783 826])
+            ("file_readable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fname" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [847 867]))                  
+                :type "bool")
+                nil [828 868])
+            ("min" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [882 892])
+                    ("b" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [893 903]))                  
+                :type ("int64_t" type (:type "class") nil nil))
+                nil [870 904])
+            ("max" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [917 927])
+                    ("b" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [928 938]))                  
+                :type ("int64_t" type (:type "class") nil nil))
+                nil [905 939])
+            ("time_of_day_begin" function
+               (:prototype-flag t
+                :type "int")
+                nil [941 965]))          
+      :file "util.h"
+      :pointmax 975
+      :fsize 974
+      :lastmodtime '(22589 20452 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UTIL_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CONTEXT_H_" variable (:constant-flag t) nil [383 393])
+            ("core.h" include nil nil [395 412])
+            ("Context" type
+               (:typedef ("_Context" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [414 446])
+            ("_Context" type
+               (:members 
+                  ( ("err" variable (:type ("Errno" type (:type "class") nil nil)) (reparse-symbol classsubparts) [470 490])
+                    ("data" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [521 542])
+                    ("code" variable (:type "int") (reparse-symbol classsubparts) [552 573])
+                    ("req_uri" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [603 627])
+                    ("config" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("cloud_search::Config" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [633 687])
+                    ("cfg_engines" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("cloud_search::ConfigEngines" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [692 751])
+                    ("params" variable (:type ("map" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil)
+                              ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [757 807])
+                    ("complete_handler" variable (:type ("cloud_ucs::InvokeCompleteHandler" type (:type "class") nil nil)) (reparse-symbol classsubparts) [812 872])
+                    ("invoke_params" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("cloud_ucs::InvokeParams" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [877 934])
+                    ("timers" variable (:type ("cloud_search::QTimerFactory" type (:type "class") nil nil)) (reparse-symbol classsubparts) [940 991])
+                    ("mod" variable
+                       (:pointer 1
+                        :type ("ModItembase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [996 1013])
+                    ("base" variable
+                       (:pointer 1
+                        :type ("event_base" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1019 1043])
+                    ("request" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("cloudair::messages::ItembaseRequest" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1054 1118])
+                    ("response" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("cloudair::messages::ItembaseResponse" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1123 1188]))                  
+                :type "struct")
+                nil [448 1192]))          
+      :file "context.h"
+      :pointmax 1202
+      :fsize 1225
+      :lastmodtime '(22589 20452 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CONTEXT_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MOD_ITEMBASE_H_" variable (:constant-flag t) nil [391 406])
+            ("core.h" include nil nil [408 425])
+            ("ModItembase" type
+               (:superclasses 
+                  ( ("Module" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [463 470])
+                    ("ModItembase" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ModItembase" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [475 489])
+                    ("ModItembase" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [494 517])
+                    ("public" label nil (reparse-symbol classsubparts) [519 526])
+                    ("InitInWorker" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("thread_num" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [549 565]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [531 566])
+                    ("InitInMaster" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("conf" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [589 608]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [571 609])
+                    ("private" label nil (reparse-symbol classsubparts) [611 619])
+                    ("Ask" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("map" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil)
+                                          ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [633 667])
+                            ("cb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cloud_ucs::InvokeCompleteHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [680 723])
+                            ("invoke_params" variable (:type ("boost::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("cloud_ucs::InvokeParams" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [736 793]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [624 794])
+                    ("InitContext" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ctx" variable
+                               (:reference 1
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Context" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [817 849])
+                            ("params" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("map" type
+                                     (:template-specifier 
+                                        ( ("string" type nil nil nil)
+                                          ("string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [863 897])
+                            ("cb" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cloud_ucs::InvokeCompleteHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [910 953])
+                            ("invoke_params" variable (:type ("boost::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("cloud_ucs::InvokeParams" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [966 1023]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [800 1024])
+                    ("private" label nil (reparse-symbol classsubparts) [1030 1038])
+                    ("InitHandle" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1043 1061])
+                    ("private" label nil (reparse-symbol classsubparts) [1063 1071])
+                    ("UcsLogHanlder" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("category" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1102 1123])
+                            ("level" variable (:type "int") (reparse-symbol arg-sub-list) [1136 1146])
+                            ("message" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1147 1167]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1076 1168])
+                    ("private" label nil (reparse-symbol classsubparts) [1170 1178])
+                    ("config_" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("cloud_search::Config" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1183 1231])
+                    ("cfg_engines_" variable (:type ("boost::shared_ptr" type
+                         (:template-specifier 
+                            ( ("cloud_search::ConfigEngines" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1236 1296])
+                    ("private" label nil (reparse-symbol classsubparts) [1298 1306])
+                    ("base_" variable
+                       (:pointer 1
+                        :type ("event_base" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1311 1349])
+                    ("private" label nil (reparse-symbol classsubparts) [1351 1359])
+                    ("handle_" variable
+                       (:pointer 1
+                        :type ("ItemHandle" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1380 1402]))                  
+                :type "class")
+                nil [427 1405]))          
+      :file "mod_itembase.h"
+      :pointmax 1415
+      :fsize 1414
+      :lastmodtime '(22589 20452 0 0)
+      :unmatched-syntax '((symbol 1371 . 1379) (STATIC 1364 . 1370))
+      :lexical-table 
+        '(("MOD_ITEMBASE_H_")
+          )
+))
+  :file "!Users!Ansic!360_works!CloudAir!cloudair_itembase!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
