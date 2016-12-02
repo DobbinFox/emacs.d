@@ -1,9 +1,9 @@
 ;;; smartparens-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "smartparens" "smartparens.el" (22585 40942
+;;;### (autoloads nil "smartparens" "smartparens.el" (22592 55469
 ;;;;;;  0 0))
 ;;; Generated autoloads from smartparens.el
 
@@ -67,8 +67,7 @@ after the smartparens indicator in the mode list.
 
 (defvar smartparens-global-strict-mode nil "\
 Non-nil if Smartparens-Global-Strict mode is enabled.
-See the `smartparens-global-strict-mode' command
-for a description of this minor mode.
+See the command `smartparens-global-strict-mode' for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `smartparens-global-strict-mode'.")
@@ -94,8 +93,7 @@ Turn on `smartparens-strict-mode'.
 
 (defvar smartparens-global-mode nil "\
 Non-nil if Smartparens-Global mode is enabled.
-See the `smartparens-global-mode' command
-for a description of this minor mode.
+See the command `smartparens-global-mode' for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `smartparens-global-mode'.")
@@ -146,8 +144,7 @@ support custom pairs.
 
 (defvar show-smartparens-global-mode nil "\
 Non-nil if Show-Smartparens-Global mode is enabled.
-See the `show-smartparens-global-mode' command
-for a description of this minor mode.
+See the command `show-smartparens-global-mode' for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
 or call the function `show-smartparens-global-mode'.")
@@ -183,7 +180,7 @@ Turn off `show-smartparens-mode'.
 ;;;;;;  "smartparens-latex.el" "smartparens-lua.el" "smartparens-ocaml.el"
 ;;;;;;  "smartparens-pkg.el" "smartparens-python.el" "smartparens-racket.el"
 ;;;;;;  "smartparens-ruby.el" "smartparens-rust.el" "smartparens-scala.el")
-;;;;;;  (22585 40942 0 0))
+;;;;;;  (22592 55469 74260 0))
 
 ;;;***
 
