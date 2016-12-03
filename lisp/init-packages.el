@@ -17,6 +17,9 @@
 						  counsel
 						  swiper
 						  find-file-in-project
+						  w3m
+						  web-mode
+						  magit
 						  ;;exec-path-from-shell
 						  smartparens
 						  window-numbering
