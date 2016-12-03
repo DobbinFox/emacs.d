@@ -50,7 +50,8 @@ the mru bookmark stack."
 ;; (setq semanticdb-project-roots (list (expand-file-name "/")))
 (defconst cedet-user-include-dirs
   (list ".." "../include" "../inc" "../common" "../public"
-		"../.." "../../include" "../../inc" "../../common" "../../public"))
+		"../.." "../../include" "../../inc" "../../common"
+		"../../public" "."))
 
 (require 'semantic-c nil 'noerror)
 (let ((include-dirs cedet-user-include-dirs))

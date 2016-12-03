@@ -1,3 +1,33 @@
+(load-theme 'monokai t)
+
+(tool-bar-mode -1)
+
+(scroll-bar-mode -1)
+
+(setq initial-frame-alist (quote ((fullscreen . maximized))))
+
+(setq inhibit-splash-screen t)
+
+(setq gnus-inhibit-startup-message t)
+
+(setq-default cursor-type 'bar)
+
+(global-linum-mode t)
+
+(electric-indent-mode t)
+
+(column-number-mode t)
+
+(global-hl-line-mode t)
+
+(setq x-underline-at-descent-line t)
+
+(display-time-mode t)  
+(setq display-time-24hr-format t)   
+(setq display-time-day-and-date t)
+
+(set-default-font "Courier New-16")
+
 (setq user-full-name "dobbin")  
 (setq user-mail-address "dobbin.fox@gmail.com")
 
@@ -29,17 +59,17 @@
 
 (setq-default kill-whole-line t)
 
-
 (setq scroll-step 1  
       scroll-margin 3  
       scroll-conservatively 10000)
 
 (setq default-major-mode 'text-mode)
 
+(global-hl-line-mode t)
+
 (delete-selection-mode t)
 
 (fset 'yes-or-no-p 'y-or-n-p)
-
 
 (defun indent-buffer()
   (interactive)
@@ -56,6 +86,7 @@
 	(indent-buffer)
 	(message "Indented buffer.")))))
 
+(global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
 
 (setq hippie-expand-try-functions-list '(try-expand-dabbrev
 					 try-expand-dabbrev-all-buffers
@@ -68,11 +99,11 @@
 					 try-complete-lisp-symbol-partially
 					 try-complete-lisp-symbol))
 
-;;(require 'dired-x)
-(setq dired-recursive-copies 'always)
-(setq dired-recursive-deletes 'always)
-(setq dired-dwim-target t)
-(put 'dired-find-alternate-file 'disable nil)
+(global-set-key (kbd "s-/") 'hippie-expand)
 
-(provide 'init-better-defaults)
+(global-set-key (kbd "C-h C-f") 'find-function)
+(global-set-key (kbd "C-h C-v") 'find-variable)
+(global-set-key (kbd "C-h C-f") 'find-function-on-key)
+
+(provide 'init-base)
 
