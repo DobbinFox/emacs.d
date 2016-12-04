@@ -8,10 +8,13 @@
   )
 
 (defvar dobbin/packages '(
+						  session
 						  company
 						  ;;solarized-theme
 						  monokai-theme
 						  ;;hungry-delete
+						  helm
+						  ;;color-theme
 						  smex
 						  ivy
 						  counsel
@@ -20,9 +23,10 @@
 						  w3m
 						  web-mode
 						  magit
-						  ;;exec-path-from-shell
+						  exec-path-from-shell
 						  smartparens
 						  window-numbering
+						  xcscope
 						  popwin
 						  ) "Default packages"
 							)

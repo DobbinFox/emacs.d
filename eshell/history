@@ -1,0 +1,43 @@
+ll
+ls -l
+clear
+ll
+clear
+pwd
+cd 360_works/
+ll
+which ls
+whoami
+which whoami
+du -sh
+du -sm
+du -sg
+du -sh
+df -sh
+df -sH
+df -H
+top
+iostat
+iostat 1
+plf
+ll
+ll
+ll
+cd .emacs.d/
+ll
+cd lisp/
+ll
+emacs init-org.el 
+which emacs
+echo $PATH 
+..
+ll
+cd eshell/
+ll
+vim alias 
+clear
+cat alias
+ll
+cat lastdir
+ll
+which cscope 

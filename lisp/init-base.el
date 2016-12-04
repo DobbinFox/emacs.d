@@ -33,6 +33,12 @@
 
 (setq ring-bell-function 'ignore)
 
+(setq kill-ring-max 200)
+
+(global-font-lock-mode t)
+
+(transient-mark-mode t)
+
 (setq visible-bell nil)
 
 (setq default-tab-width 4)

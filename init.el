@@ -13,6 +13,10 @@
 
 (require 'init-base)
 
+(require 'init-exec)
+
+(require 'init-session)
+
 (require 'init-cedet)
 
 (require 'init-ffip)
@@ -33,7 +37,15 @@
 
 (require 'init-swiper)
 
+;;(require 'init-helm)
+
+(require 'init-xcscope)
+
+(require 'init-company)
+
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
 (load-file custom-file)
+
+(put 'dired-find-alternate-file 'disabled nil)
 
