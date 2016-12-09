@@ -17,7 +17,7 @@
 
 (require 'init-session)
 
-(require 'init-cedet)
+;;(require 'init-cedet)
 
 (require 'init-ffip)
 
