@@ -22,12 +22,14 @@
 						  find-file-in-project
 						  w3m
 						  web-mode
+						  protobuf-mode
 						  magit
 						  exec-path-from-shell
 						  smartparens
 						  window-numbering
 						  xcscope
 						  popwin
+						  elpy
 						  ) "Default packages"
 							)
 
