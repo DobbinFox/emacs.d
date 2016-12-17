@@ -23,7 +23,7 @@
 
 (require 'init-org)
 
-(require 'init-smex)
+;;(require 'init-smex)
 
 (require 'init-parent)
 
@@ -47,9 +47,13 @@
 
 (require 'init-proto)
 
+(require 'init-dsvn)
+
+(require 'init-eshell)
+
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
 (load-file custom-file)
 
-(put 'dired-find-alternate-file 'disabled nil)
 
+(put 'dired-find-alternate-file 'disabled nil)

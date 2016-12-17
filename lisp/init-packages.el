@@ -23,6 +23,7 @@
 						  w3m
 						  web-mode
 						  protobuf-mode
+						  dsvn
 						  magit
 						  exec-path-from-shell
 						  smartparens

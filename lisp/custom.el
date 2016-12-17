@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  ;;'(company-auto-complete t)
- '(company-idle-delay 0.05)
+ '(company-idle-delay 0.08)
  '(company-minimum-prefix-length 1)
  '(custom-safe-themes
    (quote
@@ -14,7 +14,7 @@
  '(package-selected-packages
    (quote
 	(protobuf-mode window-numbering hungry-delete monokai-theme company)))
- '(popwin:popup-window-position (quote right))
+ '(popwin:popup-window-position (quote bottom))
  '(popwin:popup-window-width 35))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

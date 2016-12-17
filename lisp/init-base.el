@@ -53,9 +53,9 @@
 
 (abbrev-mode t)
 (define-abbrev-table 'global-abbrev-table '(
-					    ;; dobbin
-					    ("6db" "dobbin")
-					    ))
+											;; dobbin
+											("6db" "dobbin")
+											))
 
 (setq make-backup-files nil)
 
@@ -85,25 +85,51 @@
   (interactive)
   (save-excursion
     (if (region-active-p)
-	(progn
-	  (indent-region (region-beginning) (region-end))
-	  (message "Indented selected region."))
+		(progn
+		  (indent-region (region-beginning) (region-end))
+		  (message "Indented selected region."))
       (progn
-	(indent-buffer)
-	(message "Indented buffer.")))))
+		(indent-buffer)
+		(message "Indented buffer.")))))
 
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
 
 (setq hippie-expand-try-functions-list '(try-expand-dabbrev
-					 try-expand-dabbrev-all-buffers
-					 try-expand-dabbrev-from-kill
-					 try-complete-file-name-partially
-					 try-complete-file-name
-					 try-expand-all-abbrevs
-					 try-expand-list
-					 try-expand-line
-					 try-complete-lisp-symbol-partially
-					 try-complete-lisp-symbol))
+										 try-expand-dabbrev-all-buffers
+										 try-expand-dabbrev-from-kill
+										 try-complete-file-name-partially
+										 try-complete-file-name
+										 try-expand-all-abbrevs
+										 try-expand-list
+										 try-expand-line
+										 try-complete-lisp-symbol-partially
+										 try-complete-lisp-symbol))
+
+(global-set-key (kbd "M-w")
+				(lambda ()
+				  (interactive)
+				  (if mark-active
+					  (kill-ring-save (region-beginning)
+									  (region-end))
+					(progn
+					  (kill-ring-save (line-beginning-position)
+									  (line-end-position))
+					  (message "copied line")))))
+
+(global-set-key (kbd "C-w")
+				(lambda ()
+				  (interactive)
+				  (if mark-active
+					  (kill-region (region-beginning)
+								   (region-end))
+					(progn
+					  (kill-region (line-beginning-position)
+								   (line-end-position))
+					  (message "killed line")))))
+
+
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier 'super)
 
 (global-set-key (kbd "s-/") 'hippie-expand)
 
