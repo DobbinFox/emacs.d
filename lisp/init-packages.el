@@ -10,6 +10,7 @@
 (defvar dobbin/packages '(
 						  session
 						  company
+						  company-c-headers
 						  ;;solarized-theme
 						  monokai-theme
 						  ;;hungry-delete
@@ -19,17 +20,25 @@
 						  ivy
 						  counsel
 						  swiper
+						  ;;flycheck
+						  undo-tree
+						  redo+
 						  find-file-in-project
 						  w3m
 						  web-mode
 						  protobuf-mode
 						  dsvn
 						  magit
+						  yasnippet
 						  exec-path-from-shell
 						  smartparens
 						  window-numbering
 						  xcscope
 						  popwin
+						  ein
+						  ecb
+						  ;;jedi
+						  company-jedi
 						  elpy
 						  ) "Default packages"
 							)

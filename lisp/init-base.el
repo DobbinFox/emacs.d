@@ -2,7 +2,7 @@
 
 (tool-bar-mode -1)
 
-(scroll-bar-mode -1)
+;;(scroll-bar-mode -1)
 
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
 
@@ -53,7 +53,6 @@
 
 (abbrev-mode t)
 (define-abbrev-table 'global-abbrev-table '(
-											;; dobbin
 											("6db" "dobbin")
 											))
 
@@ -116,6 +115,7 @@
 									  (line-end-position))
 					  (message "copied line")))))
 
+
 (global-set-key (kbd "C-w")
 				(lambda ()
 				  (interactive)
@@ -127,11 +127,9 @@
 								   (line-end-position))
 					  (message "killed line")))))
 
-
-(setq mac-command-modifier 'meta)
-(setq mac-option-modifier 'super)
-
 (global-set-key (kbd "s-/") 'hippie-expand)
+
+(global-set-key (kbd "C-RET") 'set-mark-command)
 
 (global-set-key (kbd "C-h C-f") 'find-function)
 (global-set-key (kbd "C-h C-v") 'find-variable)

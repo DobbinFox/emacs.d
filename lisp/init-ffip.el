@@ -9,7 +9,7 @@
 
 (setq ffip-match-path-instead-of-filename t)
 
-;;(global-set-key (kbd "<f4>") 'find-file-in-project-by-selected)
+(global-set-key (kbd "C-x f") 'find-file-in-project)
 
 
 (provide 'init-ffip)
