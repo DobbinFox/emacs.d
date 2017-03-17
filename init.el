@@ -17,7 +17,9 @@
 
 (require 'init-session)
 
-;;(require 'init-cedet)
+(require 'init-cedet)
+
+;;(require 'init-ecb)
 
 (require 'init-ffip)
 
@@ -51,9 +53,17 @@
 
 (require 'init-eshell)
 
+(require 'init-yas)
+
+;;(require 'init-flycheck)
+
+(require 'init-redo)
+
+(require 'init-undotree)
+
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
 (load-file custom-file)
 
-
+;;(put 'erase-buffer 'disabled nil)
 (put 'dired-find-alternate-file 'disabled nil)
